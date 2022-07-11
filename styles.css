@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#help {
+	position: absolute;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#countOfMines {
+	color: red;
+}
+
+/* ACTUALLY GAME */
+
+#saper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+	transition: .2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.closed {
+	background-color: #666;
+	cursor: pointer;
+}
+
+.closed:hover {
+	background-color: #999;
+}
+
+.opened {
+	background-color: #53BF9D;
+}
+
+.opened:hover {
+	background-color: #A0D995;
+}
+
+.openedAfterLosing {
+	background-color: #550101;
+	color: #FFF;
+}
+
+.openedAfterLosing:hover {
+	background-color: #8F0000;
+}
+
+.openedAfterWinning {
+	background-color: #9EB23B;
+}
+
+.openedAfterWinning:hover {
+	background-color: #C7D36F;
+}
+
+.mine {
+	transition: 0.2s;
+	width: 85%;
+	height: 85%;
+}
+
+.flag {
+	transition: 0.2s;
+	width: 85%;
+	height: 85%;
+}
+
+/* ACTUALLY GAME END */
